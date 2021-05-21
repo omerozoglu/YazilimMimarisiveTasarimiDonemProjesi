@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using Domain.Common;
-using Domain.Entities.Diets;
 
-namespace Domain.Entities.Persons {
+namespace Domain.Entities.Diets {
     public class Diet : EntityBase {
 
         public DietMethod DietMethod { get; set; }
