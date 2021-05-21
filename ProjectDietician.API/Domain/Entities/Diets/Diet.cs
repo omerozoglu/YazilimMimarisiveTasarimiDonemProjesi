@@ -8,10 +8,7 @@ namespace Domain.Entities.Persons {
 
         public DietMethod DietMethod { get; set; }
 
-        //* Sabah, öğle ve akşam için 2 boyutlu liste 
-        //*  Sabah                  Öğle                Akşam
-        //*[{food,food,food,...},{food,food,food,...},{food,food,food,...}]
-        public List<List<Food>> DietContentList { get; set; }
+        public List<Food> DietContentList { get; set; }
 
         //* Başlangıç tarihi şuandan daha önce bir tarihe atanamaz
         public DateTime StartDate {

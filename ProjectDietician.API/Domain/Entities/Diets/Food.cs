@@ -1,11 +1,9 @@
-using System.Collections.Generic;
 using Domain.Common;
-using Domain.Entities.Diets.Enums;
 
 namespace Domain.Entities.Diets {
     public class Food : EntityBase {
+
+        //*string Name: Gıdanın Adı Örnek Sebze, meyve, tahıl,..vb
         public string Name { get; set; }
-        public List<string> Tag { get; set; }
-        public FoodTime FoodTime { get; set; }
     }
 }

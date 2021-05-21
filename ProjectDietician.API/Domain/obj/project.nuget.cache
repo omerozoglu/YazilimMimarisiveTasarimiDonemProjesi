@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MwPPjQ3Ouv7vzeGCInivstvoH48wYDNaTOlJhYeWAtaXGKQlP7dTcuFFtZ24a1Je+VqC3/O/k47fF2sQ9Rd1AA==",
+  "dgSpecHash": "IazYDuYtTYQCuhtBsrqZYcL2b9O38O3v+67th4WcgHTf/FLSsdzd9oEqD70acUC3UH/LMFeXsE0ulxUMXN/OCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

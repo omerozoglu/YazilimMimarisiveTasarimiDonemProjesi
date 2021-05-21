@@ -14,7 +14,7 @@ namespace Domain.Common {
         public string CreatedBy { get; set; }
 
         //*  DateTime CreatedDate: Varlığın oluşturulma tarihi.
-        public DateTime CreatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
 
         //*   string LastModifiedBy: Düzenleyici varlığın kimliği
         public string LastModifiedBy { get; set; }

@@ -7,7 +7,7 @@ namespace Domain.Common {
      */
     public class Person : EntityBase {
         public string Name { get; set; }
-        public string Lastname { get; set; }
+        public string LastName { get; set; }
         public string IDNumber { get; set; } //* string IDNumber: Ulusal kimlik numarası Global olsun diye TC demedim ama mantık aynı 
         public Sex Sex { get; set; } //* Sex Sex: Cinsiyet enumu tipinde cinsiyet bilgisi
         public int Age { get; set; }
