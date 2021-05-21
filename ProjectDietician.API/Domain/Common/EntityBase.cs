@@ -1,4 +1,6 @@
 using System;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace Domain.Common {
 
@@ -8,6 +10,9 @@ namespace Domain.Common {
     public class EntityBase {
 
         //*  string Id: Varlık kimliği.
+        //* MongoDb için ufak bir ekleme
+        [BsonId]
+        [BsonRepresentation (BsonType.ObjectId)]
         public string Id { get; protected set; }
 
         //*  string CreatedBy: Oluşturucu varlığın kimliği.
