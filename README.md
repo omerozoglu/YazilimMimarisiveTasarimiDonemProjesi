@@ -1,1 +1,1 @@
-# Yaz-l-mMimarisiveTasar-m-D-nemProjesi
+# YazilimMimarisiveTasarimiDonemProjesi
