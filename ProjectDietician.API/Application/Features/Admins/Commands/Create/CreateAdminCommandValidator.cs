@@ -1,7 +1,5 @@
-namespace Application.Features.Admin.UC.Commands.Create
-{
-    public class CreateAdminCommandValidator
-    {
-        
+namespace Application.Features.Admins.Commands.Create {
+    public class CreateAdminCommandValidator {
+
     }
 }

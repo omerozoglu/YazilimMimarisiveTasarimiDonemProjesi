@@ -1,3 +1,3 @@
-namespace Application.Features.Admin.UC.Commands.Create {
+namespace Application.Features.Admins.Commands.Create {
     public class CreateAdminCommand { }
 }

@@ -13,3 +13,5 @@ C:\Users\omero\OneDrive\Masaüstü\YazilimMimarisiveTasarimiDonemProjesi\Project
 C:\Users\omero\OneDrive\Masaüstü\YazilimMimarisiveTasarimiDonemProjesi\ProjectDietician.API\Application\obj\Debug\net5.0\Application.dll
 C:\Users\omero\OneDrive\Masaüstü\YazilimMimarisiveTasarimiDonemProjesi\ProjectDietician.API\Application\obj\Debug\net5.0\ref\Application.dll
 C:\Users\omero\OneDrive\Masaüstü\YazilimMimarisiveTasarimiDonemProjesi\ProjectDietician.API\Application\obj\Debug\net5.0\Application.pdb
+C:\Users\omero\OneDrive\Masaüstü\YazilimMimarisiveTasarimiDonemProjesi\ProjectDietician.API\Application\bin\Debug\net5.0\Infrastructure.dll
+C:\Users\omero\OneDrive\Masaüstü\YazilimMimarisiveTasarimiDonemProjesi\ProjectDietician.API\Application\bin\Debug\net5.0\Infrastructure.pdb

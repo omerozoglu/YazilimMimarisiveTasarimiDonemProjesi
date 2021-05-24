@@ -1,7 +1,5 @@
-namespace Application.Features.Admin.UC.Commands.Create
-{
-    public class CreateAdminCommandHandler
-    {
-        
+namespace Application.Features.Admins.Commands.Create {
+    public class CreateAdminCommandHandler {
+
     }
 }

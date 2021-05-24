@@ -8,19 +8,20 @@ using Domain.Common.Enums;
 using Domain.Entities.Diets;
 using MediatR;
 
-namespace Application.Features.Foods.Queries.GetList {
-    public class GetListFoodQueryHandler : IRequestHandler<GetListFoodQuery, BaseResponse<Food>> {
+namespace Application.Features.Foods.Queries.GetListByTag {
+    public class GetListByTagQueryHandler : IRequestHandler<GetListByTag, BaseResponse<Food>> {
+
         private readonly IFoodRepository _foodRepository;
         private readonly IMapper _mapper;
 
-        public GetListFoodQueryHandler (IFoodRepository foodRepository, IMapper mapper) {
+        public GetListByTagQueryHandler (IFoodRepository foodRepository, IMapper mapper) {
             _foodRepository = foodRepository;
             _mapper = mapper;
         }
 
-        public async Task<BaseResponse<Food>> Handle (GetListFoodQuery request, CancellationToken cancellationToken) {
-            var response = new BaseResponse<Food> () { ReponseName = nameof (GetListFoodQuery), Content = new List<Food> () { } };
-            var entity = await _foodRepository.GetAllAsync ();
+        public async Task<BaseResponse<Food>> Handle (GetListByTag request, CancellationToken cancellationToken) {
+            var response = new BaseResponse<Food> () { ReponseName = nameof (GetListByTag), Content = new List<Food> () { } };
+            var entity = await _foodRepository.GetListByTagsAsync (request.Tags);
             entity = _mapper.Map<List<Food>> (entity);
             if (entity == null) {
                 response.Status = ResponseType.Error;

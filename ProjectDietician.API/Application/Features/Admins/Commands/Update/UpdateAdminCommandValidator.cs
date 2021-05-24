@@ -1,7 +1,5 @@
-namespace Application.Features.Admins.Commands.Update
-{
-    public class UpdateAdminCommandValidator
-    {
-        
+namespace Application.Features.Admins.Commands.Update {
+    public class UpdateAdminCommandValidator {
+
     }
 }
