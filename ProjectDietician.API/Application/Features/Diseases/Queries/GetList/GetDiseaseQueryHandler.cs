@@ -9,7 +9,7 @@ using Domain.Entities.Diseases;
 using MediatR;
 
 namespace Application.Features.Diseases.Queries.GetList {
-    public class GetDisaseQueryHandler : IRequestHandler<GetListDisaseQuery, BaseResponse<Disease>> {
+    public class GetDisaseQueryHandler : IRequestHandler<GetListDiseaseQuery, BaseResponse<Disease>> {
         private readonly IDiseaseRepository _diseaseRepository;
         private readonly IMapper _mapper;
 
@@ -17,8 +17,8 @@ namespace Application.Features.Diseases.Queries.GetList {
             _diseaseRepository = diseaseRepository;
             _mapper = mapper;
         }
-        public async Task<BaseResponse<Disease>> Handle (GetListDisaseQuery request, CancellationToken cancellationToken) {
-            var response = new BaseResponse<Disease> () { ReponseName = nameof (GetListDisaseQuery), Content = new List<Disease> () { } };
+        public async Task<BaseResponse<Disease>> Handle (GetListDiseaseQuery request, CancellationToken cancellationToken) {
+            var response = new BaseResponse<Disease> () { ReponseName = nameof (GetListDiseaseQuery), Content = new List<Disease> () { } };
             var entity = await _diseaseRepository.GetAllAsync ();
             entity = _mapper.Map<List<Disease>> (entity);
             if (entity == null) {

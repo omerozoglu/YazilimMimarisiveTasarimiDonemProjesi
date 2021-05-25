@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Application.Contracts;
+using Application.Exceptions;
 using AutoMapper;
 using Domain.Common;
 using Domain.Common.Enums;
@@ -24,7 +25,7 @@ namespace Application.Features.Admins.Commands.Create {
             var entity = _mapper.Map<Admin> (request);
             var newentity = await _adminRepository.AddAsync (entity);
             if (newentity == null) {
-                response.Status = ResponseType.Error;
+                response.Status = ResponseType.Warning;
                 response.Message = $"{nameof(Admin)} could not be created.";
                 response.Content = null;
             } else {

@@ -4,7 +4,7 @@ using Infrastructure.Persistence;
 
 namespace Infrastructure.Repositories {
     public class AdminRepository : MongoDBRepositoryBase<Admin>, IAdminRepository {
-        public AdminRepository (MongoContext<Admin> context) : base (context) {
+        public AdminRepository (AdminMongoContext context) : base (context) {
 
         }
     }

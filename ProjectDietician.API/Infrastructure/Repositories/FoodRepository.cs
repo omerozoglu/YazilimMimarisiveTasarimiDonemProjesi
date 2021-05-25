@@ -7,7 +7,7 @@ using MongoDB.Driver;
 
 namespace Infrastructure.Repositories {
     public class FoodRepository : MongoDBRepositoryBase<Food>, IFoodRepository {
-        public FoodRepository (IMongoContext<Food> context) : base (context) {
+        public FoodRepository (FoodMongoContext context) : base (context) {
 
         }
 

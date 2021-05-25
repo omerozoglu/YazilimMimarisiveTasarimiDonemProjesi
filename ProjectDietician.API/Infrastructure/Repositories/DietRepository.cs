@@ -4,7 +4,7 @@ using Infrastructure.Persistence;
 
 namespace Infrastructure.Repositories {
     public class DietRepository : MongoDBRepositoryBase<Diet>, IDietRepository {
-        public DietRepository (MongoContext<Diet> context) : base (context) {
+        public DietRepository (DietMongoContext context) : base (context) {
 
         }
     }

@@ -13,7 +13,7 @@ namespace Domain.Common {
         //* MongoDb için ufak bir ekleme
         [BsonId]
         [BsonRepresentation (BsonType.ObjectId)]
-        public string Id { get; protected set; }
+        public string Id { get; set; }
 
         //*  string CreatedBy: Oluşturucu varlığın kimliği.
         public string CreatedBy { get; set; }

@@ -10,8 +10,6 @@ namespace Infrastructure.Utilites.Extensions.StartupExtensions {
                     .GetSection (nameof (MongoDbSettings) + ":" + MongoDbSettings.ConnectionStringValue).Value;
                 options.DatabaseName = configuration
                     .GetSection (nameof (MongoDbSettings) + ":" + MongoDbSettings.DatabaseValue).Value;
-                options.CollectionName = configuration
-                    .GetSection (nameof (MongoDbSettings) + ":" + MongoDbSettings.CollectionValue).Value;
             });
         }
     }
