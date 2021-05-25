@@ -5,9 +5,9 @@ using Domain.Common;
 namespace Domain.Entities.Diets {
     public class Diet : EntityBase {
 
-        public DietMethod DietMethod { get; set; }
+        public string DietMethodId { get; set; }
 
-        public List<Food> DietContentList { get; set; }
+        public List<string> DietFoodList { get; set; }
 
         //* Başlangıç tarihi şuandan daha önce bir tarihe atanamaz
         public DateTime StartDate {

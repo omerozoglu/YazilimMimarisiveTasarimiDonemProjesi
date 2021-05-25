@@ -6,6 +6,6 @@ namespace Domain.Entities.Persons {
     public class Dietician : Person, ILogin {
         public string Username { get; set; }
         public string Password { get; set; }
-        public List<Patient> Patients { get; set; }
+        public List<string> PatientIds { get; set; }
     }
 }
