@@ -13,7 +13,6 @@
           "Domain": "1.0.0",
           "FluentValidation": "10.1.0",
           "FluentValidation.DependencyInjectionExtensions": "10.1.0",
-          "Infrastructure": "1.0.0",
           "MediatR": "9.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
           "MongoDB.Driver": "2.12.3"
@@ -233,11 +232,6 @@
         "runtime": {
           "Domain.dll": {}
         }
-      },
-      "Infrastructure/1.0.0": {
-        "runtime": {
-          "Infrastructure.dll": {}
-        }
       }
     }
   },
@@ -395,11 +389,6 @@
       "hashPath": "system.text.encoding.codepages.4.5.1.nupkg.sha512"
     },
     "Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

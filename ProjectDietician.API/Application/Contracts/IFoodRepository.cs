@@ -5,6 +5,6 @@ using Domain.Entities.Diets;
 namespace Application.Contracts {
     public interface IFoodRepository : IAsyncRepository<Food> {
         //* Yemeğe özel veritabanı işlemleri
-        Task<List<Food>> GetListByTagsAsync (List<string> tags);
+        Task<List<Food>> GetListByTagsAsync (string tags);
     }
 }

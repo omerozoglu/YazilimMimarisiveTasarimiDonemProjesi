@@ -21,7 +21,7 @@ namespace Application.Features.Foods.Queries.GetListByTag {
 
         public async Task<BaseResponse<Food>> Handle (GetListByTag request, CancellationToken cancellationToken) {
             var response = new BaseResponse<Food> () { ReponseName = nameof (GetListByTag), Content = new List<Food> () { } };
-            var entity = await _foodRepository.GetListByTagsAsync (request.Tags);
+            var entity = await _foodRepository.GetListByTagsAsync (request.Tag);
             entity = _mapper.Map<List<Food>> (entity);
             if (entity == null) {
                 response.Status = ResponseType.Error;

@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Application.Contracts;
-using Application.Features.Admins.Commands.Delete;
 using AutoMapper;
 using Domain.Common;
 using Domain.Common.Enums;

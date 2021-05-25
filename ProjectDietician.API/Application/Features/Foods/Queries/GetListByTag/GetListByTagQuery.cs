@@ -5,10 +5,10 @@ using MediatR;
 
 namespace Application.Features.Foods.Queries.GetListByTag {
     public class GetListByTag : IRequest<BaseResponse<Food>> {
-        public GetListByTag (List<string> tags) {
-            Tags = tags;
+        public GetListByTag (string tag) {
+            Tag = tag;
         }
 
-        public List<string> Tags { get; set; }
+        public string Tag { get; set; }
     }
 }
