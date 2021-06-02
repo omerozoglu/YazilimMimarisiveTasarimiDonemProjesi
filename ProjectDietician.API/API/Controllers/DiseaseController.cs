@@ -24,7 +24,6 @@ namespace API.Controllers {
         }
 
         [HttpGet]
-        [Route ("Disease")]
         [ProducesResponseType (typeof (BaseResponse<Disease>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Disease>>> GetDiseases () {
             var query = new GetListDiseaseQuery ();
@@ -33,7 +32,7 @@ namespace API.Controllers {
         }
 
         [HttpGet]
-        [Route ("Disease/{id:length(24)}")]
+        [Route ("{id:length(24)}")]
         [ProducesResponseType (typeof (BaseResponse<Disease>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Disease>>> GetDisease (string id) {
             var query = new GetDiseaseQuery (id);
@@ -42,7 +41,6 @@ namespace API.Controllers {
         }
 
         [HttpPost]
-        [Route ("Disease")]
         [ProducesResponseType (typeof (BaseResponse<Disease>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Disease>>> CreateDisease (CreateDiseaseCommand command) {
             try {
@@ -58,7 +56,6 @@ namespace API.Controllers {
         }
 
         [HttpPut]
-        [Route ("Disease")]
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -76,7 +73,6 @@ namespace API.Controllers {
         }
 
         [HttpDelete]
-        [Route ("Disease")]
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]

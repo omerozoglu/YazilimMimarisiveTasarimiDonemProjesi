@@ -8,8 +8,6 @@ using Application.Features.Admins.Queries.Get;
 using Application.Features.Admins.Queries.GetList;
 using Domain.Common;
 using Domain.Common.Enums;
-using Domain.Entities.Diets;
-using Domain.Entities.Diseases;
 using Domain.Entities.Persons;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -28,7 +26,6 @@ namespace API.Controllers {
         }
 
         [HttpGet]
-        [Route ("Admin")]
         [ProducesResponseType (typeof (BaseResponse<Admin>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Admin>>> GetAdmins () {
             var query = new GetListAdminQuery ();
@@ -37,7 +34,7 @@ namespace API.Controllers {
         }
 
         [HttpGet]
-        [Route ("Admin/{id:length(24)}")]
+        [Route ("{id:length(24)}")]
         [ProducesResponseType (typeof (BaseResponse<Admin>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Admin>>> GetAdmin (string id) {
             var query = new GetAdminQuery (id);
@@ -46,7 +43,6 @@ namespace API.Controllers {
         }
 
         [HttpPost]
-        [Route ("Admin")]
         [ProducesResponseType (typeof (BaseResponse<Admin>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Admin>>> CreateAdmin (CreateAdminCommand command) {
             try {
@@ -62,7 +58,6 @@ namespace API.Controllers {
         }
 
         [HttpPut]
-        [Route ("Admin")]
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -80,7 +75,6 @@ namespace API.Controllers {
         }
 
         [HttpDelete]
-        [Route ("Admin")]
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]

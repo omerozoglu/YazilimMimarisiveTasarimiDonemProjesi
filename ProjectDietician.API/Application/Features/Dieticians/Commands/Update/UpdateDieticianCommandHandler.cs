@@ -22,7 +22,7 @@ namespace Application.Features.Dieticians.Commands.Update {
             var response = new BaseResponse<Dietician> () { ReponseName = nameof (UpdateDieticianCommand), Content = new List<Dietician> () { } };
             var entity = await _dieticianRepository.GetOneAsync (p => p.Id == request.Id);
             if (entity == null) {
-                response.Status = ResponseType.Error;
+                response.Status = ResponseType.Warning;
                 response.Message = $"{nameof(Dietician)} not found.";
                 response.Content = null;
             } else {

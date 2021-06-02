@@ -24,7 +24,7 @@ namespace Application.Features.Dieticians.Commands.Create {
             var entity = _mapper.Map<Dietician> (request);
             var newentity = await _dieticianRepository.AddAsync (entity);
             if (newentity == null) {
-                response.Status = ResponseType.Error;
+                response.Status = ResponseType.Warning;
                 response.Message = $"{nameof(Dietician)} could not be created.";
                 response.Content = null;
             } else {

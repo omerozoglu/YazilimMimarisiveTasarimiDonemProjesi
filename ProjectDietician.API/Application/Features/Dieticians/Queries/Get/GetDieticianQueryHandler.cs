@@ -23,7 +23,7 @@ namespace Application.Features.Dieticians.Queries.Get {
             var entity = await _dieticianRepository.GetOneAsync (p => p.Id == request.Id);
             entity = _mapper.Map<Dietician> (entity);
             if (entity == null) {
-                response.Status = ResponseType.Error;
+                response.Status = ResponseType.Warning;
                 response.Message = $"{nameof(Dietician)} not found.";
                 response.Content = null;
             } else {

@@ -25,7 +25,6 @@ namespace API.Controllers {
         }
 
         [HttpGet]
-        [Route ("Dietician")]
         [ProducesResponseType (typeof (BaseResponse<Dietician>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Dietician>>> GetDieticians () {
             var query = new GetListDieticianQuery ();
@@ -34,7 +33,7 @@ namespace API.Controllers {
         }
 
         [HttpGet]
-        [Route ("Dietician/{id:length(24)}")]
+        [Route ("{id:length(24)}")]
         [ProducesResponseType (typeof (BaseResponse<Dietician>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Dietician>>> GetDietician (string id) {
             var query = new GetDieticianQuery (id);
@@ -42,8 +41,14 @@ namespace API.Controllers {
             return Ok (result);
         }
 
+        [HttpPost ("GetLogin")]
+        [ProducesResponseType (typeof (BaseResponse<Dietician>), (int) HttpStatusCode.OK)]
+        public async Task<ActionResult<BaseResponse<Dietician>>> GetLogin (GetLoginQuery query) {
+            var result = await _mediator.Send (query);
+            return Ok (result);
+        }
+
         [HttpPost]
-        [Route ("Dietician")]
         [ProducesResponseType (typeof (BaseResponse<Dietician>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Dietician>>> CreateDietician (CreateDieticianCommand command) {
             try {
@@ -59,7 +64,6 @@ namespace API.Controllers {
         }
 
         [HttpPut]
-        [Route ("Dietician")]
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -77,7 +81,6 @@ namespace API.Controllers {
         }
 
         [HttpDelete]
-        [Route ("Dietician")]
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]

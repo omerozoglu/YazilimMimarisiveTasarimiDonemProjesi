@@ -13,7 +13,10 @@ namespace Infrastructure.Repositories {
 
         public async Task<List<Food>> GetListByTagsAsync (string tag) {
             List<Food> response = new List<Food> ();
-            response = await _context.Collection.Find (p => p.Tag.Find (t => t == tag) != null).ToListAsync ();
+            response = await _context.Collection.Find (p => true).ToListAsync ();
+            foreach (var item in response) {
+                var foods = item.Tag;
+            }
             return response;
         }
     }

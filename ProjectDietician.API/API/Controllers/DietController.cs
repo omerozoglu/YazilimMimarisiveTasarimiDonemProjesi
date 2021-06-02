@@ -24,7 +24,6 @@ namespace API.Controllers {
         }
 
         [HttpGet]
-        [Route ("Diet")]
         [ProducesResponseType (typeof (BaseResponse<Diet>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Diet>>> GetDiets () {
             var query = new GetListDietQuery ();
@@ -33,7 +32,7 @@ namespace API.Controllers {
         }
 
         [HttpGet]
-        [Route ("Diet/{id:length(24)}")]
+        [Route ("{id:length(24)}")]
         [ProducesResponseType (typeof (BaseResponse<Diet>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Diet>>> GetDiet (string id) {
             var query = new GetDietQuery (id);
@@ -42,7 +41,6 @@ namespace API.Controllers {
         }
 
         [HttpPost]
-        [Route ("Diet")]
         [ProducesResponseType (typeof (BaseResponse<Diet>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Diet>>> CreateDiet (CreateDietCommand command) {
             try {
@@ -58,7 +56,6 @@ namespace API.Controllers {
         }
 
         [HttpPut]
-        [Route ("Diet")]
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -76,7 +73,6 @@ namespace API.Controllers {
         }
 
         [HttpDelete]
-        [Route ("Diet")]
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]

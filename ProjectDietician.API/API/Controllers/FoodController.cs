@@ -25,7 +25,6 @@ namespace API.Controllers {
         }
 
         [HttpGet]
-        [Route ("Food")]
         [ProducesResponseType (typeof (BaseResponse<Food>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Food>>> GetFoods () {
             var query = new GetListFoodQuery ();
@@ -34,7 +33,7 @@ namespace API.Controllers {
         }
 
         [HttpGet]
-        [Route ("Food/{id:length(24)}")]
+        [Route ("{id:length(24)}")]
         [ProducesResponseType (typeof (BaseResponse<Food>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Food>>> GetFood (string id) {
             var query = new GetFoodQuery (id);
@@ -43,7 +42,7 @@ namespace API.Controllers {
         }
 
         [HttpGet]
-        [Route ("Food/{tag}")]
+        [Route ("{tag}")]
         [ProducesResponseType (typeof (BaseResponse<Food>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Food>>> GetFoodsByTag (string tag) {
             var query = new GetListByTag (tag);
@@ -52,7 +51,6 @@ namespace API.Controllers {
         }
 
         [HttpPost]
-        [Route ("Food")]
         [ProducesResponseType (typeof (BaseResponse<Food>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Food>>> CreateFood (CreateFoodCommand command) {
             try {
@@ -68,7 +66,6 @@ namespace API.Controllers {
         }
 
         [HttpPut]
-        [Route ("Food")]
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
@@ -86,7 +83,6 @@ namespace API.Controllers {
         }
 
         [HttpDelete]
-        [Route ("Food")]
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
