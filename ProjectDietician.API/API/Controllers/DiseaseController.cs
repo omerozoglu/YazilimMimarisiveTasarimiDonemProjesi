@@ -72,11 +72,13 @@ namespace API.Controllers {
             }
         }
 
-        [HttpDelete]
+        [HttpDelete ("{id}")]
         [ProducesResponseType (StatusCodes.Status204NoContent)]
         [ProducesResponseType (StatusCodes.Status404NotFound)]
         [ProducesDefaultResponseType]
-        public async Task<ActionResult<BaseResponse<Disease>>> DeleteDisease (DeleteDiseaseCommand command) {
+        public async Task<ActionResult<BaseResponse<Disease>>> DeleteDisease (string id) {
+
+            DeleteDiseaseCommand command = new DeleteDiseaseCommand (id);
             var result = await _mediator.Send (command);
             return Ok (result);
         }

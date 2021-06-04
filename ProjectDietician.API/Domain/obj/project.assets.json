@@ -455,11 +455,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Personal\\Desktop\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Domain\\Domain.csproj",
+      "projectPath": "D:\\Personal\\Desktop\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\omero\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Domain\\obj\\",
+      "outputPath": "D:\\Personal\\Desktop\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

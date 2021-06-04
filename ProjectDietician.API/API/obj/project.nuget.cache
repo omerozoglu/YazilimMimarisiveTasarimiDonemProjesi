@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SdLq0Nhy8Xu0qXQCRXAQDgY3G41UazgNVcow3mWq3DIKLDmQL9JHgop2yrJrpPD14n3BBI0KT3e35c08AvT67g==",
+  "dgSpecHash": "XcztjvzLrVUstfZB04FtwzxKT5Kc1fvn+bQ2Mqq6UwbPYCTcoi2j1TdWYkJoOLVzLvm42IdYtxCiuzX+r8bxTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\API\\API.csproj",
+  "projectFilePath": "D:\\Personal\\Desktop\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omero\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\omero\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

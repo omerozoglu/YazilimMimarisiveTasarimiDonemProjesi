@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BWsk33RO9W6ApgsxGhY0oXdVsze7jhV47SkL6hpW7PWoitrwYAG5/K8GPqGR0dzKsWcJOrbgQrxsMdvCN0QRqQ==",
+  "dgSpecHash": "RglriB8EtPSJmL0xUUPzdj2KMmLuo7p2+Uk9PwSn/1p2U/VudesfHx3KQ615XraoVGa8bXHPLxKd2m1JxAUmkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\Personal\\Desktop\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omero\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\omero\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",

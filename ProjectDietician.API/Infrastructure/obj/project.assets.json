@@ -952,11 +952,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\Personal\\Desktop\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "D:\\Personal\\Desktop\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\omero\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Infrastructure\\obj\\",
+      "outputPath": "D:\\Personal\\Desktop\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -974,8 +974,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\omero\\OneDrive\\Masaüstü\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Application\\Application.csproj"
+            "D:\\Personal\\Desktop\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Application\\Application.csproj": {
+              "projectPath": "D:\\Personal\\Desktop\\YazilimMimarisiveTasarimiDonemProjesi\\ProjectDietician.API\\Application\\Application.csproj"
             }
           }
         }
