@@ -11,11 +11,18 @@ namespace Infrastructure.Repositories {
 
         }
 
-        public async Task<List<Food>> GetListByTagsAsync (string tag) {
+        public async Task<List<Food>> GetListByTagsAsync (string Tag) {
             List<Food> response = new List<Food> ();
-            response = await _context.Collection.Find (p => true).ToListAsync ();
-            foreach (var item in response) {
-                var foods = item.Tag;
+            List<Food> foods = new List<Food> ();
+            foods = await _context.Collection.Find (p => true).ToListAsync ();
+            foreach (var food in foods) {
+                List<string> tags = food.Tag;
+                foreach (var tag in tags) {
+                    if (tag == Tag) {
+                        response.Add (food);
+                        break;
+                    }
+                }
             }
             return response;
         }
