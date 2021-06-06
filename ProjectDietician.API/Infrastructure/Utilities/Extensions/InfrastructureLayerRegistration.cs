@@ -1,7 +1,4 @@
 using Application.Contracts;
-using Domain.Entities.Diets;
-using Domain.Entities.Diseases;
-using Domain.Entities.Persons;
 using Infrastructure.Persistence;
 using Infrastructure.Repositories;
 using Infrastructure.Utilites.Extensions.StartupExtensions;
@@ -24,6 +21,9 @@ namespace Infrastructure {
 
             services.AddScoped<DietMongoContext> ();
             services.AddScoped<IDietRepository, DietRepository> ();
+
+            services.AddScoped<DietMethodMongoContext> ();
+            services.AddScoped<IDietMethodRepository, DietMethodRepository> ();
 
             services.AddScoped<FoodMongoContext> ();
             services.AddScoped<IFoodRepository, FoodRepository> ();

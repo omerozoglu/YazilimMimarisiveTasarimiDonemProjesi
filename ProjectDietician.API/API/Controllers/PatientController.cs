@@ -6,6 +6,7 @@ using Application.Features.Patients.Commands.Delete;
 using Application.Features.Patients.Commands.Update;
 using Application.Features.Patients.Queries.Get;
 using Application.Features.Patients.Queries.GetList;
+using Application.Features.Patients.Queries.GetListByDieticianId;
 using Domain.Common;
 using Domain.Common.Enums;
 using Domain.Entities.Persons;
@@ -37,6 +38,15 @@ namespace API.Controllers {
         [ProducesResponseType (typeof (BaseResponse<Patient>), (int) HttpStatusCode.OK)]
         public async Task<ActionResult<BaseResponse<Patient>>> GetPatient (string id) {
             var query = new GetPatientQuery (id);
+            var result = await _mediator.Send (query);
+            return Ok (result);
+        }
+
+        [HttpGet]
+        [Route ("dieticianid/{dieticianId:length(24)}")]
+        [ProducesResponseType (typeof (BaseResponse<Patient>), (int) HttpStatusCode.OK)]
+        public async Task<ActionResult<BaseResponse<Patient>>> GetPatientByDieticianId (string dieticianId) {
+            var query = new GetListByDieticianIdQuery (dieticianId);
             var result = await _mediator.Send (query);
             return Ok (result);
         }

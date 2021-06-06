@@ -2,6 +2,8 @@ using Application.Features.Admins.Commands.Create;
 using Application.Features.Admins.Commands.Update;
 using Application.Features.Dieticians.Commands.Create;
 using Application.Features.Dieticians.Commands.Update;
+using Application.Features.DietMethods.Commands.Create;
+using Application.Features.DietMethods.Commands.Update;
 using Application.Features.Diets.Commands.Create;
 using Application.Features.Diets.Commands.Update;
 using Application.Features.Diseases.Commands.Create;
@@ -34,6 +36,10 @@ namespace Application.Mapping {
             //* Diet mapping 
             CreateMap<Diet, CreateDietCommand> ().ReverseMap ();
             CreateMap<Diet, UpdateDietCommand> ().ReverseMap ();
+
+            //* DietMethod mapping 
+            CreateMap<DietMethod, CreateDietMethodCommand> ().ReverseMap ();
+            CreateMap<DietMethod, UpdateDietMethodCommand> ().ReverseMap ();
 
             //* Disease mapping 
             CreateMap<Disease, CreateDiseaseCommand> ().ReverseMap ();

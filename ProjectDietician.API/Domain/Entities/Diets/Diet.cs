@@ -11,19 +11,23 @@ namespace Domain.Entities.Diets {
 
         //* Başlangıç tarihi şuandan daha önce bir tarihe atanamaz
         public DateTime StartDate {
-            get { return this.StartDate; }
+            get;
+            set;
+            /*   get { return this.StartDate; }
             set {
-                if (value < DateTime.UtcNow) this.StartDate = DateTime.UtcNow;
-                else this.StartDate = value;
-            }
+                 if (value < DateTime.UtcNow) this.StartDate = DateTime.UtcNow;
+                 else this.StartDate = value;
+             } */
         }
         //* Bitiş tarihi Başlangıç tarihinden daha önce bir tarihe atanamaz
         public DateTime EndDate {
-            get { return this.EndDate; }
+            get;
+            set;
+            /* get { return this.EndDate; }
             set {
                 if (value < this.StartDate) this.EndDate = this.StartDate;
                 else this.EndDate = value;
-            }
+            } */
         }
 
     }
